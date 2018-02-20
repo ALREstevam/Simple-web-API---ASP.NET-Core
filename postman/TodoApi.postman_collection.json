@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TodoApi",
+		"_postman_id": "a87f84ea-f707-0978-8398-4aa3e590aec8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:57859/api/todo",
+			"request": {
+				"url": "http://localhost:57859/api/todo",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"split logs for the long winter\",\r\n    \"isComplete\":true\r\n}"
+				},
+				"description": "Testing create"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:57859/api/todo/1",
+			"request": {
+				"url": "http://localhost:57859/api/todo/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\": 1,\r\n    \"name\":\"walk dog\",\r\n    \"isComplete\":true\r\n}"
+				},
+				"description": "testing update\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:57859/api/todo/1",
+			"request": {
+				"url": "http://localhost:57859/api/todo/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 2\n}"
+				},
+				"description": "testing delete\n"
+			},
+			"response": []
+		}
+	]
+}
